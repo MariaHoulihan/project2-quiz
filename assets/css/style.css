@@ -11,6 +11,7 @@ h1, h2 {
     background-color: cornflowerblue;
 }
 
+/* main image */
 .main-image {
     width: 75%;
     margin-left: auto;
@@ -19,7 +20,18 @@ h1, h2 {
     text-align: center;
 }
 
+/* start quiz button */
+.btn--aqua {
+    color: black;
+    background-color: aqua;
+    border: 1px transparent;
+}
 
+.btn--aqua:active, .btn--aqua:hover {
+    background-color: magenta;
+}
+
+/* footer */
 footer {
     position: absolute;
     text-align: center;
