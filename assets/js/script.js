@@ -4,14 +4,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
   for (let button of my buttons) {
     button.addEventListener("click"), function() {
-      if (this.getAttribute("data-type") === "submit")
-    }
-      alert("You clicked Submit!");
-  }
+      let playerChoice = this.getAttribute("data-choice");
+      playGame(playerChoice);
+    });
+      
+};
 
+function playGame(playerChoice) {
+    let result = questions[playerChoice];
+    updateScores(result);
 }
-)}
+
+function updateScores() {
+  
 }
+
 /* var or let ???? */
 var questions = [{
   
